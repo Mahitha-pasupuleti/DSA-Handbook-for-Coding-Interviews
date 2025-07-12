@@ -3,7 +3,27 @@
 This handbook is a curated and expanded guide for Data Structures and Algorithms (DSA) tailored for coding interviews at top tech companies. It includes concise definitions, edge cases, key techniques, and linked resources to help streamline your prep.
 
 ---
-List of Topics:
+# 📖 List of Topics:
+- [📌 Arrays](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-📌-arrays)
+- [🧵 Strings](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🧵-strings)
+- [🔃 Sorting](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🔃-sorting)
+- [🧮 Matrix](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🧮-matrix)
+- [🔗 Linked List](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🔗-linked-list)
+- [⏩ Queue](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-⏩-queue)
+- [🧱 Stack](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🧱-stack)
+- [🗺️ Hash Map / Hash Set](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🗺️-hash-map--hash-set)
+- [🌲 Tree](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🌲-tree)
+- [🌐 Graph](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🌐-graph)
+- [🔺 Heap / Priority Queue](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🔺-heap--priority-queue)
+- [🔤 Trie](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🔤-trie)
+- [📆 Intervals](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-📆-intervals)
+- [💰 Greedy](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-💰-greedy)
+- [🔁 Recursion](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🔁-recursion)
+- [🧠 Dynamic Programming](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🧠-dynamic-programming)
+- [🔙 Backtracking](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🔙-backtracking)
+- [🔄 Cyclic Sort](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🔄-cyclic-sort)
+- [🧮 Bit Manipulation](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🧮-bit-manipulation)
+- [➗ Math](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-➗-math)
 
 
 ---
@@ -92,11 +112,14 @@ List of Topics:
 - Timsort: Hybrid sorting algorithm used in Python.
 
 ### Time Complexity:
-| Algorithm      | Best Case  | Average Case | Worst Case  |
-|----------------|------------|--------------|-------------|
-| Bubble Sort    | O(n)       | O(n²)        | O(n²)       |
-| Quick Sort     | O(n log n) | O(n log n)   | O(n²)       |
-| Merge Sort     | O(n log n) | O(n log n)   | O(n log n)  |
+| Algorithm      | Time      | Space     | In-place | Stable |
+|----------------|-----------|-----------|----------|--------|
+| Bubble Sort    | O(n²)     | O(1)      | Yes      | Yes    |
+| Selection Sort | O(n²)     | O(1)      | Yes      | No     |
+| Insertion Sort | O(n²)     | O(1)      | Yes      | Yes    |
+| Merge Sort     | O(n log n)| O(n)      | No       | Yes    |
+| Quick Sort     | O(n log n)| O(log n)  | Yes     | No     |
+| Heap Sort      | O(n log n)| O(1)      | Yes      | No     |
 
 ### Less Known but Important Points:
 - Quick Sort’s worst case can be avoided with random pivot.
