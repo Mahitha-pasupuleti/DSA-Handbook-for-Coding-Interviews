@@ -4,8 +4,8 @@ This handbook is a curated and expanded guide for Data Structures and Algorithms
 
 ---
 # 📖 List of Topics:
-- [📌 Arrays](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-📌-arrays)
-- [🧵 Strings](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🧵-strings)
+- [📌 Arrays](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/Topics/arrays.md)
+- [🧵 Strings](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/Topics/strings.md)
 - [🔃 Sorting](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🔃-sorting)
 - [🧮 Matrix](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🧮-matrix)
 - [🔗 Linked List](https://github.com/TharunKumarReddyPolu/DSA-Handbook-for-Coding-Interviews/blob/main/README.md#topic-name-🔗-linked-list)
