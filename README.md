@@ -1,4 +1,4 @@
-# 📘 DSA Reference Handbook for Coding Interviews
+# 📘 DSA Handbook for Coding Interviews
 
 <img width="917" height="306" alt="dsa-handbook-cover" src="https://github.com/user-attachments/assets/02fab156-1293-492e-bf59-8c34a20fd632" />
 
@@ -29,10 +29,12 @@ _This handbook is a curated and expanded guide for Data Structures and Algorithm
 
 ---
 
-## 📚 Must-Know Core References
+## 📚 Must-Know References
 - [Big-O Cheatsheet](https://www.bigocheatsheet.com/)
 - [AlgoMonster: Runtime Complexity Summary](https://algo.monster/problems/runtime_summary)
 - [AlgoMonster: Keyword to Algo](https://algo.monster/problems/keyword_to_algo)
+- [AlgoMaster DSA Patterns](https://algomaster.io/practice/dsa-patterns)
+- [Tech Interview Handbook](https://www.techinterviewhandbook.org/algorithms/study-cheatsheet/)
 - [Python `collections` module](https://www.geeksforgeeks.org/python-collections-module/)
 - [CP Algorithms - Bit Manipulation](https://cp-algorithms.com/algebra/bit-manipulation.html)
 - [Python Sorted Containers](https://www.geeksforgeeks.org/python-sorted-containers-an-introduction/)
@@ -46,7 +48,7 @@ _This handbook is a curated and expanded guide for Data Structures and Algorithm
 
 ---
 
-> Inspired by practical interview prep with insights from AlgoMonster, LeetCode, GFG, CP-Algorithms, and my personal preparation notes.
+> Inspired by practical coding interview prep with insights from AlgoMonster, LeetCode, GFG, CP-Algorithms, and my personal DSA preparation notes.
 
 ## Help me improve the project better 📈
 
