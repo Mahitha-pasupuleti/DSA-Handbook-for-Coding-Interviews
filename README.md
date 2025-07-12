@@ -2,7 +2,7 @@
 
 <img width="917" height="306" alt="dsa-handbook-cover" src="https://github.com/user-attachments/assets/02fab156-1293-492e-bf59-8c34a20fd632" />
 
-_This handbook is a curated and expanded guide for Data Structures and Algorithms (DSA) tailored for coding interviews at top tech companies. It includes important definitions, time complexities, lesser-known facts, edge cases, key patterns, and the most relevant problems & resources to help streamline your prep._
+_This handbook is a curated guide to Data Structures and Algorithms (DSA) designed for last-minute coding interview preparation at top tech companies. It includes each topic into a concise, high-impact format covering: key definitions, time complexities, lesser-known concepts, edge cases, common patterns, and the most relevant problems & resources to help you revise DSA smarter, not harder._
 
 ---
 # 📖 List of DSA Topics:
@@ -43,14 +43,14 @@ _This handbook is a curated and expanded guide for Data Structures and Algorithm
 ---
 
 ## 📺 Best Free Video Resources
-- [70 Leetcode problems in 5+ hours (every data structure) (full tutorial)](https://youtu.be/lvO88XxNAzs)
+- [70 Leetcode problems in 5+ hours (every data structure)](https://youtu.be/lvO88XxNAzs)
 - [Neetcode 150 Youtube Playlist](https://www.youtube.com/watch?v=3OamzN90kPg&list=PLPe9IkX86X3y5m_MvtNu2ughxsvkqUNKr)
 
 ---
 
-> Inspired by practical coding interview prep with insights from AlgoMonster, LeetCode, GFG, CP-Algorithms, and my personal DSA preparation notes.
+> Inspired by practical coding interview prep with key insights from resources like AlgoMonster, LeetCode, GFG, CP-Algorithms, and my personal DSA preparation notes.
 
-## Help me improve the project better 📈
+## Help improve the project better 📈
 
 Please discuss your concerns with [Tharun Kumar Reddy Polu](https://tharunpolu.com/) before creating a new issue/Pull Request.
 
