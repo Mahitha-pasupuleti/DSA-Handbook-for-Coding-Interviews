@@ -3,19 +3,8 @@
 This handbook is a curated and expanded guide for Data Structures and Algorithms (DSA) tailored for coding interviews at top tech companies. It includes concise definitions, edge cases, key techniques, and linked resources to help streamline your prep.
 
 ---
+List of Topics:
 
-## 📺 Watch This First
-- [AlgoMonster Deep Dive (YouTube)](https://youtu.be/lvO88XxNAzs)
-
----
-
-## 📚 Core Resources
-- [Python `collections` module](https://www.geeksforgeeks.org/python-collections-module/)
-- [Dunder Methods in Python](https://www.geeksforgeeks.org/dunder-magic-methods-python/)
-- [AlgoMonster: Runtime Complexity Summary](https://algo.monster/problems/runtime_summary)
-- [AlgoMonster: Keyword to Algo](https://algo.monster/problems/keyword_to_algo)
-- [CP Algorithms - Bit Manipulation](https://cp-algorithms.com/algebra/bit-manipulation.html)
-- [Python Sorted Containers](https://www.geeksforgeeks.org/python-sorted-containers-an-introduction/)
 
 ---
 
@@ -284,6 +273,41 @@ This handbook is a curated and expanded guide for Data Structures and Algorithms
 - [Monotonic Stack Pattern](https://leetcode.com/problems/daily-temperatures/solution/)
 - [MinStack Implementation](https://leetcode.com/problems/min-stack/solution/)
 
+# Topic Name: 🗺️ Hash Map / Hash Set
+
+### Important Terminologies:
+- Hash Map: Key-value pairs with O(1) average access.
+- Hash Set: Unique elements with O(1) average operations.
+- Collision: When multiple keys hash to same index.
+
+### Time Complexity:
+- Insert/Access/Delete: O(1) average, O(n) worst case.
+
+### Less Known but Important Points:
+- Python uses dict and set.
+- Useful for frequency counting, memoization.
+- Avoid mutable keys in hash maps.
+
+### Edge Cases to Consider:
+- Duplicate keys.
+- Non-existent keys.
+- Mutation during iteration.
+
+### Common Coding Interview Patterns:
+- Two sum using hashmap.
+- Frequency map for anagram detection.
+- Caching/memoization.
+
+### Relevant LeetCode Problems:
+- [Two Sum](https://leetcode.com/problems/two-sum/) (LC #1)
+- [Group Anagrams](https://leetcode.com/problems/group-anagrams/) (LC #49)
+- [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) (LC #128)
+
+### Links to Important Resources:
+- [Hashing in Python](https://realpython.com/python-hash-table/)
+- [Python dict](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+- [When to Use Sets vs Lists](https://stackoverflow.com/questions/2831212/python-sets-vs-lists)
+
 
 # Topic Name: 🌲 Tree
 
@@ -529,6 +553,213 @@ This handbook is a curated and expanded guide for Data Structures and Algorithms
 - Backtracking.
 - Tree
 
-_Last updated: July 2025_
+# Topic Name: 🧠 Dynamic Programming
 
-> Inspired by practical interview prep with insights from AlgoMonster, LeetCode, GFG, CP-Algorithms, and personal notes.
+### Important Terminologies:
+- Overlapping Subproblems: Same subproblems solved multiple times.
+- Optimal Substructure: Solution to problem can be built from solutions to subproblems.
+- Memoization: Top-down approach with caching.
+- Tabulation: Bottom-up approach with iteration.
+
+### Time Complexity:
+- Typically O(n), O(n²), or O(n³) depending on state and transitions.
+
+### Less Known but Important Points:
+- DP problems usually involve choosing, skipping, or combining choices.
+- 1D/2D arrays or hash maps commonly used for state representation.
+- Identify recurrence relation early.
+
+### Edge Cases to Consider:
+- Zero input size.
+- Negative numbers in state values.
+- Integer overflow in recursive calls.
+
+### Common Coding Interview Patterns:
+- 0/1 Knapsack
+- Longest Common Subsequence
+- DP on Strings, Grids, Trees
+
+### Relevant LeetCode Problems:
+- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) (LC #70)
+- [House Robber](https://leetcode.com/problems/house-robber/) (LC #198)
+- [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) (LC #5)
+
+### Links to Important Resources:
+- [DP Introduction](https://www.geeksforgeeks.org/dynamic-programming/)
+- [Top-down vs Bottom-up](https://leetcode.com/discuss/general-discussion/475924/my-experience-and-thoughts-on-dynamic-programming)
+- [Patterns of DP](https://www.educative.io/blog/cracking-the-coding-interview-dynamic-programming)
+
+# Topic Name: 🔙 Backtracking
+
+### Important Terminologies:
+- Backtracking: Try out all options and undo when needed.
+- State Space Tree: Tree representing all solution candidates.
+- Pruning: Skip unnecessary branches early.
+
+### Time Complexity:
+- Generally exponential, O(kⁿ) or O(n!) depending on permutations/combinations.
+
+### Less Known but Important Points:
+- Often confused with DFS — but backtracking undoes choices.
+- Can be combined with memoization for optimization.
+- Classic tool for constraint satisfaction problems.
+
+### Edge Cases to Consider:
+- No solution case.
+- Duplicates in input affecting permutations.
+- Maximum depth reached early.
+
+### Common Coding Interview Patterns:
+- Subsets and permutations.
+- N-Queens / Sudoku Solver.
+- Word search / Path finding.
+
+### Relevant LeetCode Problems:
+- [Subsets](https://leetcode.com/problems/subsets/) (LC #78)
+- [Permutations](https://leetcode.com/problems/permutations/) (LC #46)
+- [N-Queens](https://leetcode.com/problems/n-queens/) (LC #51)
+
+### Links to Important Resources:
+- [Backtracking Overview](https://www.geeksforgeeks.org/backtracking-algorithms/)
+- [N-Queens Explained](https://leetcode.com/problems/n-queens/solution/)
+- [Backtracking Pattern](https://medium.com/@codingfreak/backtracking-is-not-recursion-73941d6f16bf)
+
+# Topic Name: 🔄 Cyclic Sort
+
+### Important Terminologies:
+- Cyclic Sort: Sorting numbers when they are in a range 1 to n.
+- In-place Swap: Swap elements without extra space.
+- Index-Matching: Element value matches its index+1.
+
+### Time Complexity:
+- Best, Average, Worst: O(n)
+
+### Less Known but Important Points:
+- Does not use comparisons — uses swapping.
+- Extremely space efficient.
+- Detects duplicates/missing numbers efficiently.
+
+### Edge Cases to Consider:
+- Duplicate or missing elements.
+- Zero or negative values (outside 1..n).
+- Already sorted array.
+
+### Common Coding Interview Patterns:
+- Finding duplicates/missing numbers.
+- Sorting range-limited elements.
+- Place correct element at correct index.
+
+### Relevant LeetCode Problems:
+- [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) (LC #448)
+- [Set Mismatch](https://leetcode.com/problems/set-mismatch/) (LC #645)
+- [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) (LC #41)
+
+### Links to Important Resources:
+- [Cyclic Sort Pattern](https://www.educative.io/courses/grokking-coding-interview-patterns-java/qVVNDRqLZZA)
+- [In-place Cyclic Sort](https://www.geeksforgeeks.org/cyclic-sort/)
+- [Missing and Duplicate Pattern](https://leetcode.com/problems/find-the-duplicate-number/solution/)
+
+
+# Topic Name: 🧮 Bit Manipulation
+
+### Important Terminologies:
+- XOR: Useful for finding unique elements.
+- Bit Masking: Use of bits to represent sets.
+- Bit Shifting: Left/right shift for power of two calculations.
+
+### Time Complexity:
+- O(1) for most operations.
+- O(log n) when looping over bits.
+
+### Less Known but Important Points:
+- n & (n - 1) removes the rightmost set bit.
+- XOR of same number is zero.
+- Count set bits with Brian Kernighan’s algo.
+
+### Edge Cases to Consider:
+- Zero input.
+- Negative numbers.
+- Overflow in shifts.
+
+### Common Coding Interview Patterns:
+- Single number in pairs.
+- Subset generation using bits.
+- Count number of 1s.
+
+### Relevant LeetCode Problems:
+- [Single Number](https://leetcode.com/problems/single-number/) (LC #136)
+- [Counting Bits](https://leetcode.com/problems/counting-bits/) (LC #338)
+- [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) (LC #191)
+
+### Links to Important Resources:
+- [Bit Manipulation Tricks](https://www.geeksforgeeks.org/bitwise-hacks-for-competitive-programming/)
+- [Bitwise Operators in Python](https://realpython.com/python-bitwise-operators/)
+- [Bitmasking Explained](https://leetcode.com/problems/subsets/solution/)
+
+# Topic Name: ➗ Math
+
+### Important Terminologies:
+- GCD/LCM: Greatest Common Divisor / Least Common Multiple.
+- Modulo Arithmetic: Useful for large number operations.
+- Prime Number: Number divisible only by 1 and itself.
+
+### Time Complexity:
+- Varies. Euclidean GCD is O(log min(a, b)).
+- Sieve of Eratosthenes is O(n log log n).
+
+### Less Known but Important Points:
+- (a * b) % c = ((a % c) * (b % c)) % c
+- Use fast exponentiation for power mod.
+- Overflow risk with large factorials.
+
+### Edge Cases to Consider:
+- Zero and one.
+- Negative numbers.
+- Precision for floats.
+
+### Common Coding Interview Patterns:
+- Sieve for prime generation.
+- GCD for array operations.
+- Power mod / inverse mod.
+
+### Relevant LeetCode Problems:
+- [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) (LC #1071)
+- [Count Primes](https://leetcode.com/problems/count-primes/) (LC #204)
+- [Pow(x, n)](https://leetcode.com/problems/powx-n/) (LC #50)
+
+### Links to Important Resources:
+- [GCD and LCM](https://www.geeksforgeeks.org/gcd-in-python/)
+- [Sieve of Eratosthenes](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)
+- [Modular Arithmetic](https://cp-algorithms.com/algebra/module-inverse.html)
+
+---
+
+## 📚 Must-Know Core References
+- [Big-O Cheatsheet](https://www.bigocheatsheet.com/)
+- [AlgoMonster: Runtime Complexity Summary](https://algo.monster/problems/runtime_summary)
+- [AlgoMonster: Keyword to Algo](https://algo.monster/problems/keyword_to_algo)
+- [Python `collections` module](https://www.geeksforgeeks.org/python-collections-module/)
+- [CP Algorithms - Bit Manipulation](https://cp-algorithms.com/algebra/bit-manipulation.html)
+- [Python Sorted Containers](https://www.geeksforgeeks.org/python-sorted-containers-an-introduction/)
+- [Dunder Methods in Python](https://www.geeksforgeeks.org/dunder-magic-methods-python/)
+
+---
+
+## 📺 Best Free Video Resources
+- [70 Leetcode problems in 5+ hours (every data structure) (full tutorial)](https://youtu.be/lvO88XxNAzs)
+- [Neetcode 150 Youtube Playlist](https://www.youtube.com/watch?v=3OamzN90kPg&list=PLPe9IkX86X3y5m_MvtNu2ughxsvkqUNKr)
+
+---
+
+> Inspired by practical interview prep with insights from AlgoMonster, LeetCode, GFG, CP-Algorithms, and my personal preparation notes.
+
+## Help me improve the project better 📈
+
+Please discuss your concerns with [Tharun Kumar Reddy Polu](https://tharunpolu.com/) before creating a new issue/Pull Request.
+
+_Please `STAR`⭐️ the repository if you like the content_
+
+_Also enable the `WATCH`👁 button to keep watching the updates on the repository_
+
+
+_Last updated: July 2025_
