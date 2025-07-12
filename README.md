@@ -1,6 +1,8 @@
 # 📘 DSA Reference Handbook for Coding Interviews
 
-This handbook is a curated and expanded guide for Data Structures and Algorithms (DSA) tailored for coding interviews at top tech companies. It includes important definitions, time complexities, less known facts, edge cases, key patterns, and most relevant problems & resources to help streamline your prep.
+<img width="917" height="306" alt="dsa-handbook-cover" src="https://github.com/user-attachments/assets/02fab156-1293-492e-bf59-8c34a20fd632" />
+
+_This handbook is a curated and expanded guide for Data Structures and Algorithms (DSA) tailored for coding interviews at top tech companies. It includes important definitions, time complexities, lesser-known facts, edge cases, key patterns, and the most relevant problems & resources to help streamline your prep._
 
 ---
 # 📖 List of DSA Topics:
