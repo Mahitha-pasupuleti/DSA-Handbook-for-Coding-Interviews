@@ -42,7 +42,7 @@ _This handbook is a curated guide to Data Structures and Algorithms (DSA) design
 
 ---
 
-## 📺 Best Free Video Resources
+## 📺 Must-Watch Video Resources
 - [70 Leetcode problems in 5+ hours (every data structure)](https://youtu.be/lvO88XxNAzs)
 - [Neetcode 150 Youtube Playlist](https://www.youtube.com/watch?v=3OamzN90kPg&list=PLPe9IkX86X3y5m_MvtNu2ughxsvkqUNKr)
 
