@@ -37,24 +37,44 @@ Interval problems involve ranges defined by start and end points. These problems
 ## Implementation Patterns
 
 ### 1. Basic Interval Operations
-```python
-class Interval:
-    def __init__(self, start, end):
-        self.start = start
-        self.end = end
+```java
+public class Interval {
+    int start;
+    int end;
 
-def do_overlap(a: Interval, b: Interval) -> bool:
-    return max(a.start, b.start) <= min(a.end, b.end)
+    // Constructor
+    public Interval(int start, int end) {
+        this.start = start;
+        this.end = end;
+    }
 
-def get_overlap(a: Interval, b: Interval) -> Interval:
-    if not do_overlap(a, b):
-        return None
-    return Interval(max(a.start, b.start), min(a.end, b.end))
+    // Check if two intervals overlap
+    public static boolean doOverlap(Interval a, Interval b) {
+        return Math.max(a.start, b.start) <= Math.min(a.end, b.end);
+    }
 
-def merge_two_intervals(a: Interval, b: Interval) -> Interval:
-    if not do_overlap(a, b):
-        return None
-    return Interval(min(a.start, b.start), max(a.end, b.end))
+    // Get overlapping interval
+    public static Interval getOverlap(Interval a, Interval b) {
+        if (!doOverlap(a, b)) {
+            return null;
+        }
+        return new Interval(Math.max(a.start, b.start), Math.min(a.end, b.end));
+    }
+
+    // Merge two overlapping intervals
+    public static Interval mergeTwoIntervals(Interval a, Interval b) {
+        if (!doOverlap(a, b)) {
+            return null;
+        }
+        return new Interval(Math.min(a.start, b.start), Math.max(a.end, b.end));
+    }
+
+    @Override
+    public String toString() {
+        return "[" + start + ", " + end + "]";
+    }
+}
+
 ```
 
 ### 2. Merge Intervals
