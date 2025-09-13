@@ -114,29 +114,35 @@ public class IntervalMerger {
 ```
 
 ### 3. Meeting Rooms
-```python
-import heapq
+```java
+import java.util.*;
 
-def min_meeting_rooms(intervals):
-    if not intervals:
-        return 0
-    
-    # Sort by start time
-    intervals.sort(key=lambda x: x[0])
-    
-    # Min heap to track end times
-    rooms = []
-    heapq.heappush(rooms, intervals[0][1])
-    
-    for interval in intervals[1:]:
-        # If meeting can use existing room
-        if rooms[0] <= interval[0]:
-            heapq.heappop(rooms)
-        
-        # Add current meeting's end time
-        heapq.heappush(rooms, interval[1])
-    
-    return len(rooms)
+public class MeetingRooms {
+
+    public static int minMeetingRooms(int[][] intervals) {
+        if (intervals == null || intervals.length == 0) {
+            return 0;
+        }
+
+        // Sort by start time
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+
+        // Min heap to track end times
+        PriorityQueue<Integer> rooms = new PriorityQueue<>();
+        rooms.add(intervals[0][1]);
+
+        for (int i = 1; i < intervals.length; i++) {
+            // If the current meeting can use the same room
+            if (rooms.peek() <= intervals[i][0]) {
+                rooms.poll(); // Free up the room
+            }
+            // Add current meeting's end time
+            rooms.add(intervals[i][1]);
+        }
+
+        return rooms.size();
+    }
+}
 ```
 
 ### 4. Insert Interval
