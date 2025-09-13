@@ -196,24 +196,32 @@ def erase_overlap_intervals(intervals):
 ## Common Techniques
 
 ### 1. Sweep Line Algorithm
-```python
-def sweep_line(intervals):
-    events = []
-    # Add start and end events
-    for start, end in intervals:
-        events.append((start, 1))   # 1 for start
-        events.append((end, -1))    # -1 for end
-    
-    events.sort()  # Sort by time
-    
-    current = 0
-    max_overlap = 0
-    
-    for time, count in events:
-        current += count
-        max_overlap = max(max_overlap, current)
-    
-    return max_overlap
+```java
+import java.util.*;
+
+class Solution {
+    public int minMeetingRooms(int[][] intervals) {
+        // TreeMap automatically sorts keys (time points)
+        TreeMap<Integer, Integer> map = new TreeMap<>();
+        
+        // Step 1: Record all start and end events
+        for (int[] interval : intervals) {
+            map.put(interval[0], map.getOrDefault(interval[0], 0) + 1); // start of meeting
+            map.put(interval[1], map.getOrDefault(interval[1], 0) - 1); // end of meeting
+        }
+
+        // Step 2: Sweep line
+        int currentRooms = 0;
+        int maxRooms = 0;
+        for (int value : map.values()) {
+            currentRooms += value;               // add +1 for start, -1 for end
+            maxRooms = Math.max(maxRooms, currentRooms);
+        }
+
+        return maxRooms;
+    }
+}
+
 ```
 
 ### 2. Interval Tree
