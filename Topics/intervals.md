@@ -78,25 +78,39 @@ public class Interval {
 ```
 
 ### 2. Merge Intervals
-```python
-def merge_intervals(intervals):
-    if not intervals:
-        return []
-    
-    # Sort by start time
-    intervals.sort(key=lambda x: x[0])
-    
-    merged = [intervals[0]]
-    
-    for interval in intervals[1:]:
-        if interval[0] <= merged[-1][1]:
-            # Overlapping intervals, update end time
-            merged[-1][1] = max(merged[-1][1], interval[1])
-        else:
-            # Non-overlapping interval, add to result
-            merged.append(interval)
-    
-    return merged
+```java
+import java.util.*;
+
+public class IntervalMerger {
+
+    public static List<Interval> mergeIntervals(List<Interval> intervals) {
+        if (intervals == null || intervals.isEmpty()) {
+            return new ArrayList<>();
+        }
+
+        // Sort by start time
+        intervals.sort(Comparator.comparingInt(a -> a.start));
+
+        List<Interval> merged = new ArrayList<>();
+        merged.add(intervals.get(0));
+
+        for (int i = 1; i < intervals.size(); i++) {
+            Interval last = merged.get(merged.size() - 1);
+            Interval current = intervals.get(i);
+
+            if (current.start <= last.end) {
+                // Overlapping intervals, update end time
+                last.end = Math.max(last.end, current.end);
+            } else {
+                // Non-overlapping interval, add to result
+                merged.add(current);
+            }
+        }
+
+        return merged;
+    }
+}
+
 ```
 
 ### 3. Meeting Rooms
